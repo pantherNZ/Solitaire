@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FDD2F91E-186C-4CAF-AEE2-119BF67E6922}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Solitaire</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="backbuffer.cpp" />
+    <ClCompile Include="card.cpp" />
+    <ClCompile Include="clock.cpp" />
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="level.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="sprite.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="backbuffer.h" />
+    <ClInclude Include="card.h" />
+    <ClInclude Include="clock.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="level.h" />
+    <ClInclude Include="resources.h" />
+    <ClInclude Include="sprite.h" />
+    <ClInclude Include="stack.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\Clubs\Clubs_10.bmp" />
+    <None Include="..\..\Resources\Clubs\Clubs_2.bmp" />
+    <None Include="..\..\Resources\Clubs\Clubs_3.bmp" />
+    <None Include="..\..\Resources\Clubs\Clubs_4.bmp" />
+    <None Include="..\..\Resources\Clubs\Clubs_5.bmp" />
+    <None Include="..\..\Resources\Clubs\Clubs_6.bmp" />
+    <None Include="..\..\Resources\Clubs\Clubs_7.bmp" />
+    <None Include="..\..\Resources\Clubs\Clubs_8.bmp" />
+    <None Include="..\..\Resources\Clubs\Clubs_9.bmp" />
+    <None Include="..\..\Resources\Clubs\Clubs_Ace.bmp" />
+    <None Include="..\..\Resources\Diamonds\Diamonds_3.bmp" />
+    <None Include="..\..\Resources\Diamonds\Diamonds_4.bmp" />
+    <None Include="..\..\Resources\Diamonds\Diamonds_5.bmp" />
+    <None Include="..\..\Resources\Diamonds\Diamonds_6.bmp" />
+    <None Include="..\..\Resources\Diamonds\Diamonds_9.bmp" />
+    <None Include="..\..\Resources\Hearts\Hearts_5.bmp" />
+    <None Include="..\..\Resources\Hearts\Hearts_6.bmp" />
+    <None Include="..\..\Resources\Hearts\Hearts_7.bmp" />
+    <None Include="..\..\Resources\Hearts\Hearts_8.bmp" />
+    <None Include="..\..\Resources\Hearts\Hearts_Queen.bmp" />
+    <None Include="..\..\Resources\Other\Card_Highlight.bmp" />
+    <None Include="..\..\Resources\Other\Card_Highlight_Mask.bmp" />
+    <None Include="..\..\Resources\Other\Card_Mask.bmp" />
+    <None Include="..\..\Resources\Other\Card_Slot.bmp" />
+    <None Include="..\..\Resources\Spades\Spades_2.bmp" />
+    <None Include="..\..\Resources\Spades\Spades_5.bmp" />
+    <None Include="..\..\Resources\Spades\Spades_King.bmp" />
+    <None Include="bitmap1.bmp" />
+    <None Include="Card_AceSlot_Clubs_.bmp" />
+    <None Include="Card_AceSlot_Diamonds_.bmp" />
+    <None Include="Card_AceSlot_Hearts_.bmp" />
+    <None Include="Card_AceSlot_Spades_.bmp" />
+    <None Include="Card_Back.bmp" />
+    <None Include="Card_Highlight.bmp" />
+    <None Include="Card_Highlight_Mask.bmp" />
+    <None Include="Card_Mask.bmp" />
+    <None Include="Card_Slot.bmp" />
+    <None Include="Card_Slot_Mask.bmp" />
+    <None Include="Clubs_10.bmp" />
+    <None Include="Clubs_3.bmp" />
+    <None Include="Clubs_4.bmp" />
+    <None Include="Clubs_5.bmp" />
+    <None Include="Clubs_6.bmp" />
+    <None Include="Clubs_7.bmp" />
+    <None Include="Clubs_8.bmp" />
+    <None Include="Clubs_9.bmp" />
+    <None Include="Clubs_Ace.bmp" />
+    <None Include="Clubs_Jack.bmp" />
+    <None Include="Clubs_King.bmp" />
+    <None Include="Clubs_Queen.bmp" />
+    <None Include="Cubs_2.bmp" />
+    <None Include="Deck_Refresh.bmp" />
+    <None Include="DECK_REFRESH_MASK.bmp" />
+    <None Include="Diamonds_10.bmp" />
+    <None Include="Diamonds_2.bmp" />
+    <None Include="Diamonds_3.bmp" />
+    <None Include="Diamonds_4.bmp" />
+    <None Include="Diamonds_5.bmp" />
+    <None Include="Diamonds_6.bmp" />
+    <None Include="Diamonds_7.bmp" />
+    <None Include="Diamonds_8.bmp" />
+    <None Include="Diamonds_9.bmp" />
+    <None Include="Diamonds_Ace.bmp" />
+    <None Include="Diamonds_Jack.bmp" />
+    <None Include="Diamonds_King.bmp" />
+    <None Include="Diamonds_Queen.bmp" />
+    <None Include="Hearts_10.bmp" />
+    <None Include="Hearts_2.bmp" />
+    <None Include="Hearts_3.bmp" />
+    <None Include="Hearts_4.bmp" />
+    <None Include="Hearts_5.bmp" />
+    <None Include="Hearts_6.bmp" />
+    <None Include="Hearts_7.bmp" />
+    <None Include="Hearts_8.bmp" />
+    <None Include="Hearts_9.bmp" />
+    <None Include="Hearts_Ace.bmp" />
+    <None Include="Hearts_Jack.bmp" />
+    <None Include="Hearts_King.bmp" />
+    <None Include="Hearts_Queen.bmp" />
+    <None Include="Spades_10.bmp" />
+    <None Include="Spades_2.bmp" />
+    <None Include="Spades_3.bmp" />
+    <None Include="Spades_4.bmp" />
+    <None Include="Spades_5.bmp" />
+    <None Include="Spades_6.bmp" />
+    <None Include="Spades_7.bmp" />
+    <None Include="Spades_8.bmp" />
+    <None Include="Spades_9.bmp" />
+    <None Include="Spades_Ace.bmp" />
+    <None Include="Spades_Jack.bmp" />
+    <None Include="Spades_King.bmp" />
+    <None Include="Spades_Queen.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

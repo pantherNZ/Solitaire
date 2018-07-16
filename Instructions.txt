@@ -1,0 +1,19 @@
+How to Play Solitaire: 
+
+You start with 7 piles across the game, these are called the tableau. There is the deck in the top left, 
+cards can be taken off of the deck (1 at a time) to the deck pile, which can then be used within the game.
+
+There are 4 foundation piles at the top right of the screen, for each suit. These are built in ascending 
+order (Ace - King). Once all these piles are complete, you finish the game.
+
+Players make moves in several different ways: (A move is only valid if the move is in descending order eg. Moving a jack onto a queen is valid, and the cards must alternate colours)
+  - You can move from the deck pile to the tableau.
+  - You can move cards around within the tableau.
+  - You can move cards from the foundations to the tableau and vice versa.
+  - You can move Kings from the deck pile or from another pile onto an empty slot in the tableau.
+
+Each time you move a card your "moves" counter will increase. This is essentially your score.
+
+Good luck and have fun!
+
+PS: Not every game of Solitaire is finishable.

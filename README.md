@@ -1,2 +1,0 @@
-# Solitaire
-Solitaire - Uni Project
